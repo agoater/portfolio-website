@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Goater | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+</head>
+
+<body style="opacity: 0; transition: opacity 0.5s ease;">
+    <div class="progress-bar"></div>
+
+    <header class="header">
+        <nav class="nav">
+        </nav>
+
+        <div class="hero-content">
+            <div class="text-section">
+                <h1 style="opacity: 0; transform: translateY(50px); transition: all 0.8s ease;">Software<br>Developer.
+                </h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Hi! I'm Alex, a doctor of astrophysics turned game design enthusiast who discovered a passion for creating software that
+                solves real problems.
+                    <br>
+                    <br>
+                    Previously, I leveraged analytical thinking to help unravel the mysteries of dark matter in my
+                    PhD.
+                    <br>
+                    <br>
+                    Now I'm channeling that same problem-solving approach into designing user-centered experiences that make gaming
+                    more enjoyable.
+                </p>
+            </div>
+
+            <div class="image-section">
+                <div class="portrait-container">
+                    <div class="portrait">
+                        <img src="photo-of-me.jpg" alt="Photo of Alex" class="main-portrait-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-arrow" onclick="scrollToNext()">
+            <span>Scroll down</span>
+            <div class="arrow-icon"></div>
+        </div>
+
+        <div class="decorative-elements">
+            <div class="dots pattern-1"></div>
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="dots pattern-2"></div>
+            <div class="line-pattern"></div>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-row">
+                <div class="about-text">
+                    <p>My journey from astrophysicist to aspiring software designer began during my doctoral research at the University of Surrey,
+                    where four years of rigorous problem-solving forged the analytical mindset I now apply to creating engaging user
+                    experiences. 
+                    <br>
+                    <br>
+                    Working with complex galactic simulations and vast datasets taught me to break down ambiguous challenges
+                    into testable hypotheses—skills that translate seamlessly into identifying player friction points and iterating on
+                    user-focused design solutions. 
+                    <br>
+                    <br>
+                    Through crafting tabletop games and building apps like my real-time multiplayer life tracking tool,
+                    I've learned that the most compelling experiences emerge from deeply understanding user motivations, and feedback should be embraced as a pathway to innovation.
+                    </p>
+                </div>
+                <div class="about-photo">
+                    <div class="cv-container">
+                        <img src="alex-goater-cv-preview.jpg" alt="CV Preview" class="cv-preview-image">
+                        <div class="cv-overlay">
+                            <span>View CV</span>
+                        </div>
+                        <div class="cv-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-row reverse">
+                <div class="about-photo">
+                    <div class="monty-container">
+                        <img src="photo-of-monty.jpg" alt="Photo of Monty" class="about-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>When I'm not developing my software portfolio, you can either find me struggling to contain this
+                        bundle
+                        of energy pictured on the left (his name is Monty!), or putting my love for strategic thinking
+                        to work in games that reward careful planning and quick adaptation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">PhD Research</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        My PhD in astrophysics was a rigorous training ground in advanced problem-solving, statistical
+                        analysis, and complex
+                        systems thinking. Over four years, I developed expertise in breaking down ambiguous research
+                        questions into testable
+                        hypotheses, designing sophisticated data analysis pipelines using Python and statistical
+                        modeling techniques. This gave me experience
+                        managing long-term projects from conception through to publication, and culminated in a
+                        comprehensive Python
+                        toolkit for analysing galaxy morphology. This toolkit demonstrates my ability to architect
+                        scalable solutions and translate
+                        complex datasets into meaningful insights—skills that led to first-author publication in a
+                        top-tier scientific journal.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Collaboration</span>
+                        <span class="tech-tag">Statistical Modeling</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <a href="https://arxiv.org/abs/2307.05130" class="project-link" target="_blank">View Research →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">bigtable (Life Track App)</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        A real-time multiplayer life tracking app for Magic: The Gathering, I designed bigtable to solve
+                        the frustrating problem of
+                        managing life totals across large gaming tables. Built with React Native and Node.js, the app
+                        uses WebSocket connections
+                        to instantly sync game state across up to 6 players' devices. Featuring automatic commander
+                        damage tracking, simple room
+                        codes for easy joining, and an intuitive mobile interface optimized for gameplay, this project
+                        demonstrates my ability
+                        to identify real-world problems and create full-stack solutions that enhance user experiences.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Critical Thinking</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Mobile UI/UX</span>
+                        <span class="tech-tag">Real-time Systems</span>
+                    </div>
+                    <a href="https://github.com/agoater/bigtable-life-tracker" class="project-link" target="_blank">View
+                        Code →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Interactive Portfolio</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        This dynamic portfolio website represents a comprehensive showcase of creative design thinking
+                        through my web
+                        development capabilities. Built from the ground up with vanilla HTML, CSS, and JavaScript, it
+                        demonstrates proficiency
+                        in creating engaging user experiences without relying on heavy frameworks, prioritising a simple
+                        interface for the user.
+                        Not only does it highlight my ability to create cohesive visual design systems, but it
+                        accentuates my ability to bring
+                        creative concepts to life, all while maintaining clean development practices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">User Accessibility</span>
+                        <span class="tech-tag">Creativity</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/agoater/portfolio-website" class="project-link" target="_blank">View
+                        Source →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Let's work together!</h2>
+
+        <!-- Social Links moved above the contact button -->
+        <div class="social-links">
+            <a href="https://github.com/agoater" class="social-btn github" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/alex-goater-phd-563212369/?trk=opento_sprofile_topcard"
+                class="social-btn linkedin" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+
+        <button class="contact-btn" onclick="toggleContactForm()">Get in touch</button>
+
+        <!-- Contact Form Dropdown -->
+        <div class="contact-form-dropdown" id="contactForm">
+            <div class="contact-form-container">
+                <h3>Send me a message</h3>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Send Message</button>
+                </form>
+                <button type="button" class="close-form-btn" onclick="toggleContactForm()">×</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
