@@ -1,9 +1,9 @@
 /* ===================================
    CSS VARIABLES & GLOBAL STYLES
    =================================== */
-:root {
-    --primary-blue: #0ea5e9;
-    --warm-orange: #f97316;
+   :root {
+    --primary-blue: #1894ce;
+    --warm-orange: #dc772e;
     --deep-blue: #0369a1;
     --soft-cream: #fefce8;
     --charcoal: #1f2937;
@@ -91,9 +91,9 @@ body {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--warm-orange);
-    background: linear-gradient(135deg, #fb923c 0%, #fb923c 25%, var(--soft-cream) 35%, var(--soft-cream) 45%, #fb923c 70%, #fb923c 100%);
+    background: linear-gradient(135deg, #ffa358 0%, #ffa358 25%, var(--soft-cream) 30%, var(--soft-cream) 60%, #ffa358 70%, #ffa358 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -107,7 +107,7 @@ body {
     left: 0;
     width: 100px;
     height: 4px;
-    background: var(--warm-orange);
+    background: #ffa358;
     animation: pulse-line 2s ease-in-out infinite;
 }
 
@@ -115,15 +115,15 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 3rem;
-    max-width: 600px;
-    color: var(--white);
+    max-width: 510px;
+    color: var(--soft-cream);
     position: relative;
     padding: 20px;
     padding-left: 40px;
-    background: rgba(249, 115, 22, 0.25);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    border: 1px solid rgba(246, 214, 192, 0.2);
 }
 
 /* Simple accent line for hero text */
@@ -134,7 +134,7 @@ body {
     top: 30px;
     width: 3px;
     height: calc(100% - 60px);
-    background: linear-gradient(to bottom, var(--warm-orange) 0%, transparent 100%);
+    background: linear-gradient(to bottom, #fd9541 0%, transparent 100%);
     border-radius: 2px;
 }
 
@@ -243,27 +243,28 @@ body {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-image: radial-gradient(circle, var(--warm-orange) 2px, transparent 2px);
+    background-image: radial-gradient(circle, var(--soft-cream) 2px, transparent 2px);
     background-size: 15px 15px;
     opacity: 0.6;
 }
 
 .pattern-1 {
-    top: 8%;
+    top: 5%;
     left: 5%;
-    animation: float 6s ease-in-out infinite;
+    opacity: 0.6;
 }
 
 .pattern-2 {
     bottom: 15%;
     right: 15%;
-    background-image: radial-gradient(circle, var(--white) 1px, transparent 1px);
-    animation: float 8s ease-in-out infinite reverse;
+    background-image: radial-gradient(circle, var(--soft-cream) 1px, transparent 1px);
+    opacity: 0.6;
 }
 
 .shape {
     position: absolute;
-    border: 2px solid var(--warm-orange);
+    border: 2px solid var(--soft-cream);
+    opacity: 0.6;
 }
 
 .shape-1 {
@@ -272,8 +273,8 @@ body {
     border-radius: 50%;
     top: 15%;
     right: 15%;
-    animation: rotate 10s linear infinite;
-    filter: drop-shadow(0 0 10px var(--warm-orange));
+    opacity:0.6;
+    filter: drop-shadow(0 0 10px var(--soft-cream));
 }
 
 .shape-2 {
@@ -282,8 +283,7 @@ body {
     bottom: 40%;
     left: 50%;
     transform: rotate(45deg);
-    animation: pulse 4s ease-in-out infinite;
-    background: var(--warm-orange);
+    background: var(--soft-cream);
 }
 
 .shape-3 {
@@ -292,8 +292,8 @@ body {
     border-radius: 50%;
     top: 65%;
     right: 5%;
-    animation: float 7s ease-in-out infinite;
-    filter: drop-shadow(0 0 8px var(--warm-orange));
+    filter: drop-shadow(0 0 8px var(--soft-cream));
+    opacity: 0.6;
 }
 
 .line-pattern {
@@ -302,9 +302,9 @@ body {
     right: 5%;
     width: 100px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--warm-orange), transparent);
+    background: linear-gradient(90deg, transparent, var(--soft-cream), transparent);
     animation: slide 3s ease-in-out infinite;
-    filter: drop-shadow(0 0 5px var(--warm-orange));
+    filter: drop-shadow(0 0 5px var(--soft-cream));
 }
 
 /* ===================================
@@ -326,6 +326,7 @@ section p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+    text-align: left;
 }
 
 /* ===================================
@@ -380,7 +381,7 @@ section p {
 }
 
 .about-text p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin: 0;
     color: var(--soft-cream);
@@ -740,7 +741,9 @@ section p {
 }
 
 .project-link {
-    display: inline-flex;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
     align-items: center;
     gap: 0.8rem;
     padding: 1rem 2rem;
