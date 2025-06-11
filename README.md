@@ -9,8 +9,7 @@ Visit the live site: [alexgoater.com](https://alexgoater.com)
 ## Features
 
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Smooth Animations**: Intersection Observer API for scroll-triggered animations
-- **Interactive Elements**: Hover effects, animated decorative shapes, and progress bar
+- **Interactive Elements**: Hover effects and progress bar
 - **Modern UI/UX**: Clean design with vibrant gradients and thoughtful typography
 - **Contact Form**: Integrated contact form with smooth dropdown animation
 - **Performance Optimized**: Vanilla JavaScript for fast load times
@@ -30,7 +29,6 @@ portfolio-website/
 ├── index.html          # Main HTML structure
 ├── styles.css          # All styling and animations
 ├── script.js           # JavaScript functionality
-├── settings.json       # VS Code Live Server settings
 └── README.md           # This file
 ```
 
@@ -61,7 +59,7 @@ portfolio-website/
 
 ### Dynamic Elements
 - **Progress Bar**: Shows scroll progress through the page
-- **Animated Hero Section**: Gradient text effects and floating decorative shapes
+- **Animated Hero Section**: Gradient text effects
 - **Project Cards**: Hover effects with animated backgrounds
 - **Contact Form**: Smooth dropdown with form validation
 
@@ -75,7 +73,7 @@ portfolio-website/
 
 ### Updating Content
 - Edit text content directly in `index.html`
-- Modify colors and styling in `styles.css` (CSS variables at the top)
+- Modify colors and styling in `styles.css`
 - Add new sections by following the existing structure
 
 ### Adding Projects
